@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Butaca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-5.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 30px;color: maroon;"><strong>Cinemes La Butaca</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cartellera">Cartellera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#esdeveniments">Esdeveniments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Tickets">Entrades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#IniciaSessió">Inicia sessió</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Registra't">Registra't</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca..." aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+ <!--carousel-->
+ <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="Joker2.jpg" class="d-block w-100" alt="Joker">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="KoK.jpeg" class="d-block w-100" alt="KoK">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="Beetlejuice.jpg" class="d-block w-100" alt="Beetlejuice">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="Deadpool3.jpg" class="d-block w-100" alt="Deadpool 3">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="smile2.jpg" class="d-block w-100" alt="Smile 2">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="the-substance.jpg" class="d-block w-100" alt="The substance">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="Longlegs.jpg" class="d-block w-100" alt="Longlegs">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="Mascarpone.jpg" class="d-block w-100" alt="Mascarpone">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="Robot-salvaje.jpg" class="d-block w-100" alt="Robot Salvaje">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="vaiana2.png" class="d-block w-100" alt="vaiana2">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="wicked.jpg" class="d-block w-100" alt="wicked">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="red_one.jpg" class="d-block w-100" alt="red one">
+        </div>
+    </div>
+ </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+<!--CARTELLERA-->
+<section id="cartellera">
+    <h1 class="texto1">CARTELLERA</h1>
+    <div class="cartelera-container">
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/Joker2-poster.jpg" class="movie-poster" alt="Joker 2">
+            <div class="info-pelicula">
+                <h1><strong>JOKER 2</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Todd Phillips</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Brendan Gleeson, Zazie Beetz, Joaquin Phoenix, Catherine Keener i Lady Gaga</p>
+                <p><strong>SINOPSIS</strong> </p>
+                <p>Després de crear el caos, Arthur Fleck ha estat internat en Arkham a l'espera de judici pels seus crims com Joker. Mentre lídia amb la seva doble identitat, Arthur no sols es topa amb l'amor veritable, sinó que també descobreix la música que sempre ha estat dins d'ell.</p>
+                <iframe src="https://www.youtube.com/embed/_OKAwz2MsJs" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/KoK-poster.jpg" class="movie-poster" alt="KoK">
+            <div class="info-pelicula">
+                <h1><strong>KINDS OF KIDNESS</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Yorgos Lanthimos</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Emma Stone, Margaret Qualley, Jesse Plemons, Hunter Schafer, Joe Alwyn, Willem Dafoe i Hong Chau</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>Fábula en forma de tríptico que narra tres historias: la de un hombre atrapado que intenta tomar las riendas de su propia vida; la de un policía aterrado porque su mujer, que había desaparecido en el mar, ha vuelto y parece otra persona; y la de una mujer decidida a encontrar a alguien con un don especial, destinado a convertirse en un prodigioso líder espiritual.</p>
+                <iframe src="https://www.youtube.com/embed/6v-qgsOWgEc?si=oRTzt7HuUblVYtsr" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/Beetlejuice-poster.jpg" class="movie-poster" alt="Beetlejuice 2">
+            <div class="info-pelicula">
+                <h1><strong>BEETLEJUICE BEETLEJUICE 2</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Tim Burton</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Tim Burton, Michael Keaton, Winona Ryder, Jenna Ortega, Monica Bellucci i Willem Dafoe</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>Després d'una inesperada tragèdia familiar, tres generacions de la família Deetz tornen a Winter River. La vida de Lydia, encara turmentada per Bitelchús, fa un tomb quan la seva rebel filla adolescent, Astrid, descobreix la misteriosa maqueta de la ciutat en la golfa i el portal al Més enllà s'obre accidentalment. Amb els problemes que s'aveïnen en tots dos regnes, és només qüestió de temps que algú digui el nom de *Bitelchús tres vegades i l'entremaliat dimoni torni per a deslligar el seu propi caos.</p>
+                <iframe src="https://www.youtube.com/embed/As-vKW4ZboU?si=HV3QedIrQ73W5xbB" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/Smile2-poster.jpg" class="movie-poster" alt="Smile 2">
+            <div class="info-pelicula">
+                <h1><strong>SMILE 2</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Parker Finn</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Kyle Gallner, Rosemarie DeWitt, Dylan Gelula, Naomi Scott, Raúl Castillo, Lukas Gage, Ray Nicholson, Peter Jacobson, Miles Gutierrez-Riley</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>L'estrella del pop mundial Skye Riley està a punt d'embarcar-se en una nova gira mundial quan comença a experimentar una sèrie de successos cada vegada més aterridors i inexplicables. Angoixada per l'espiral d'horrors i l'aclaparadora pressió de la fama, *Skye haurà d'enfrontar-se al seu fosc passat per a recuperar el control de la seva vida abans que sigui massa tarda.</p>
+                <iframe src="https://www.youtube.com/embed/0HY6QFlBzUY?si=odu5w0gD0AvF158a" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/Deadpool-poster.jpg" class="movie-poster" alt="Deadpool 3">
+            <div class="info-pelicula">
+                <h1><strong>DEADPOOL & LOBEZNO 2</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Sarah Finn</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Ryan Reynolds, Hugh Jackman, Emma Corrin, Channing Tatum, Dafne Keen i Chris Evans</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>Un apàtic Wade Wilson malda per la vida civil després de deixar enrere els seus dies com Deadpool, un mercenari moralment flexible. Però quan el seu món natal s'enfronta a una amenaça existencial, Wade ha de tornar a vestir-se a contracor amb un Llobató encara més poc inclinat a ajudar.</p>
+                <iframe src="https://www.youtube.com/embed/73_1biulkYk?si=xWGWsvAPuDgR91Ru" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/LaSustancia-poster.jpg" class="movie-poster" alt="The substance">
+            <div class="info-pelicula">
+                <h1><strong>THE SUBSTANCE</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Coralie Fargeat</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Demi Moore, Margaret Qualley, Dennis Quaid, Tiffany Hofstetter i Hugo Diego Garcia</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>La trama segueix a una celebritat en decadència (Demi Moore) que decideix usar un sèrum del mercat negre, una substància que replica cèl·lules i crea temporalment una versió més jove i millor d'ella mateixa (Margaret Qualley), però que per incomplir unes estrictes condicions li causarà efectes secundaris inesperats i horribles.</p>
+                <iframe src="https://www.youtube.com/embed/LNlrGhBpYjc?si=JbAFPEdL9c6AqOID" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/Longlegs-poster.jpg" class="movie-poster" alt="Longlegs">
+            <div class="info-pelicula">
+                <h1><strong>LONGLEGS</strong></h1>
+                <p><strong>DIRECTOR</strong></p>
+                <p>Oz Perkins</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Nicolas Cage, Maika Monroe, Alicia Witt, Kiernan Shipka i Blair Underwood</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>Lee Harker és una brillant i prometedora nova agent del FBI, a qui li assignen un cas sense resoldre que involucra a un esquiu assassí en sèrie conegut com "Longlegs". La recerca de Harker es torna cada vegada més complexa i pertorbadora quan descobreix proves de rituals ocults vinculats als assassinats. A mesura que desentranya aquests inquietants detalls, s'adona que té una connexió personal amb l'assassí, la qual cosa la impulsa a una carrera contra el temps per a detenir-lo abans que reclami la vida d'una altra família innocent.</p>
+                <iframe src="https://www.youtube.com/embed/OG7wOTE8NhE?si=BT3iCBdUtfJachy6" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="cartel" onclick="toggleInfo(this)">
+            <img src="poster/mascarpone-poster.jpg" class="movie-poster" alt="Mascarpone">
+            <div class="info-pelicula">
+                <h1><strong>MASCARPONE</strong></h1>
+                <p><strong>DIRECTORS</strong></p>
+                <p>Alessandro Guida i Matteo Pilati</p>
+                <p><strong>REPARTIMENT</strong></p>
+                <p>Gianmarco Saurino, Giancarlo Commare, Eduardo Valdarnini i Michela Giraud</p>
+                <p><strong>SINOPSIS</strong></p>
+                <p>Antonio, un home de 30 anys amb una vida aparentment estable, s'enfronta a un gir inesperat quan el seu espòs l'abandona de sobte, deixant-lo sense suport tant psicològic com econòmic. A partir d'aquest moment, Antonio ha de trobar un nou lloc on viure, un treball i un propòsit renovat en la seva vida.</p>
+                <iframe src="https://www.youtube.com/embed/OLMb1lUDtrA?si=JT3g8pth7qzL7NVA" allowfullscreen></iframe>
+            </div>
+        </div>
+
+            <div class="cartel" onclick="toggleInfo(this)">
+                <img src="poster/RobotSalvaje-poster.jpg" class="movie-poster" alt="Mascarpone">
+                <div class="info-pelicula">
+                    <h1><strong>ROBOT SALVAJE</strong></h1>
+                    <p><strong>DIRECTOR</strong></p>
+                    <p>Parker Finn</p>
+                    <p><strong>REPARTIMENT</strong></p>
+                    <p>Kit Connor, Pedro Pascal, Bill Nighy, Stephanie Hsu i Mark Hamill</p>
+                    <p><strong>SINOPSIS</strong></p>
+                    <p>La pel·lícula segueix l'èpic viatge d'un robot -la unitat 7134 de Roz, "Roz" per a abreujar- que naufraga en una illa deshabitada i ha d'aprendre a adaptar-se al dur entorn, entaulant gradualment relacions amb els animals de l'illa i convertint-se en pare adoptiu d'un gosling orfe.</p>
+                    <iframe src="https://www.youtube.com/embed/8-_4gvrHAys" allowfullscreen></iframe>
+                </div>
+            </div>  
+
+            <div class="cartel" onclick="toggleInfo(this)">
+                <img src="poster/Vaiana2-poster.jpg" class="movie-poster" alt="Vaiana 2">
+                <div class="info-pelicula">
+                    <h1><strong>VAIANA 2</strong></h1>
+                    <p><strong>DIRECTORS</strong></p>
+                    <p>Dana Ledoux Miller, Jason Hand i David Derrick Jr</p>
+                    <p><strong>REPARTIMENT</strong></p>
+                    <p>Dwayne Johnson, Alan Tudyk, Auli'i Cravalho, Nicole Scherzinger i Hualalai Chung</p>
+                    <p><strong>SINOPSIS</strong></p>
+                    <p>Després de rebre una inesperada crida dels seus avantpassats, Vaiana ha de viatjar a les llunyanes mars d'Oceania i endinsar-se en perilloses aigües perdudes per a viure una aventura sense precedents.</p>
+                    <iframe src="https://www.youtube.com/embed/qkgkUCqEum4?si=25w5BexnLUzy7Lsr" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="cartel" onclick="toggleInfo(this)">
+                <img src="poster/RedOne-poster.jpg" class="movie-poster" alt="Red One">
+                <div class="info-pelicula">
+                    <h1><strong>RED ONE</strong></h1>
+                    <p><strong>DIRECTOR</strong></p>
+                    <p>Jake Kasdan</p>
+                    <p><strong>REPARTIMENT</strong></p>
+                    <p>Dwayne Johnson, Chris Evans, Kiernan Shipka, J. K. Simmons i Lucy Liu</p>
+                    <p><strong>SINOPSIS</strong></p>
+                    <p>Després del segrest de Papà Noel, nom en clau: RED ONE, el Cap de Seguretat del Pol Nord ha de formar equip amb el cazarrecompenses més infame del món en una missió rodamon plena d'acció per a salvar Nadal.</p>
+                    <iframe src="https://www.youtube.com/embed/HMFK7mzUEKI" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="cartel" onclick="toggleInfo(this)">
+                <img src="poster/Wicked-poster.jpg" class="movie-poster" alt="Wicked">
+                <div class="info-pelicula">
+                    <h1><strong>WICKED</strong></h1>
+                    <p><strong>DIRECTOR</strong></p>
+                    <p>Jon M. Chu</p>
+                    <p><strong>REPARTIMENT</strong></p>
+                    <p>Ariana Grande, Cynthia Erivo, Peter Dinklage, Ethan Slater i Jonathan Bailey</p>
+                    <p><strong>SINOPSIS</strong></p>
+                    <p>La història de com una dona de pell verda maragda es converteix en la Malvada Bruixa de l'Oest; llargmetratge basat en el musical de Broadway.</p>
+                    <iframe src="https://www.youtube.com/embed/UNHQgy3jawI?si=i3JqwSKSKNRINN9w" allowfullscreen></iframe>
+                </div>
+            </div>
+      </div>
+</section>
+
+<!--ESDEVENIMENTS-->
+<section id="esdeveniments">
+    <h1 class="texto1">ESDEVENIMENTS</h1>
+    <div class="container my-5">
+        <div class="accordion" id="accordionEsdeveniments">
+
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>HALLOWEEN NIGHT</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionEsdeveniments">
+                    <div class="accordion-body d-flex align-items-center gap-4">
+                        <div id="carouselHalloween" class="carousel_Halloween carousel slide" data-bs-ride="carousel" style="flex: 1; max-width: 45%;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="Esdeveniments/coraline.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="Esdeveniments/annabelle.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="Esdeveniments/elSilenciodelosCorderos.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="Esdeveniments/halloweenKills.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="Esdeveniments/nightmareonelmstreet.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="Esdeveniments/scream.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="Esdeveniments/theShining.jpg" class="d-block w-100 movie-poster">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHalloween" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHalloween" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="info-pelicula-e" style="flex: 1;">
+                            <h3><strong>LA BUTACA HALLOWEEN</strong></h3>
+                            <p>Vine a gaudir al nostre cinema d'una experiència inoblidable la nit del 31 d'octubre, on hem preparat una programació especial plena de moments intensos i emocionants.</p>
+                            <p>Descobreix una selecció de pel·lícules clàssiques que et transportaran a la infantesa, aquelles que et fan reviure records de misteri i aventures. També t'oferirem algunes de les pel·lícules de terror més esgarrifoses, dissenyades per fer-te saltar de la butaca i, potser, dormir amb el llum encès!</p>
+                            <p>La nit estarà acompanyada de snacks únics i temàtics que només trobaràs en aquesta vetllada especial, i amb sorpreses inesperades que faran d’aquesta Halloween una nit realment aterridora.</p>
+                            <p>No deixis escapar aquesta oportunitat per viure una Halloween diferent, amb ambientació especial, premis per a les millors disfresses, i una atmosfera que et farà sentir com si formessis part de cada història.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>SETMANA DE MARTIN SCORSESE</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionEsdeveniments">
+                    <div class="accordion-body d-flex align-items-center gap-4">
+                        <img src="Esdeveniments/Scorsese.jpg" class="d-block" style="flex: 1; max-width: 45%; height: auto;">
+                        <div class="info-pelicula-e" style="flex: 1;">
+                            <h3><strong>SETMANA DE MARTIN SCORSESE</strong></h3>
+                            <p>Vine a gaudir d'una setmana dedicada a un dels directors més influents del cinema. Amb una selecció de les seves obres mestres, viuràs una experiència única a la gran pantalla.</p>
+                            <p>Des de "Taxi Driver" fins a "Goodfellas", cada pel·lícula t'ofereix una visió única de la seva narrativa i estil. A més, organitzem xerrades sobre el seu llegat cinematogràfic i la seva influència en el món del cinema.</p>
+                            <p>No et perdis aquesta oportunitat per veure les pel·lícules de Martin Scorsese com mai abans!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>GAUDEIX DEL CINEMA A LA TEVA MANERA</strong>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionEsdeveniments">
+                    <div class="accordion-body d-flex align-items-center gap-4">
+                        <div class="info-pelicula-e" style="flex: 1;">
+                            <h3><strong>EL CINEMA A LA TEVA MANERA</strong></h3>
+                            <p>Vols fer una festa inoblidable, una reunió de treball diferent o una activitat especial? Al nostre cinema, et brindem la oportunitat de llogar sales per a esdeveniments privats. Imagina't celebrar el teu aniversari amb una pel·lícula de culte en gran pantalla, organitzar una presentació impactant o gaudir d'una vetllada de jocs amb amics en un ambient de cinema exclusiu.</p>
+                            <p>A més, oferim opcions per a tota mena d’activitats, des de projeccions de pel·lícules clàssiques fins a esdeveniments temàtics, perfectes per a grups petits o grans. No deixis passar l'oportunitat de crear records memorables en un espai que combina la màgia del cinema amb la teva personalitat.</p>
+                            <p>Reserva la teva sala ara i prepara’t per gaudir del cinema com mai abans!</p>
+                        </div>
+                        <img src="Esdeveniments/Butaca.jpg" class="d-block" style="flex: 1; max-width: 45%; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--ENTRADES-->
+<section id="Tickets" class="my-5">
+    <h1 class="texto1 text-center">COMPRA LES TEVES ENTRADES</h1>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correu electrònic</label>
+                <input type="email" class="form-control" id="email" placeholder="Introdueix el teu correu electrònic" required>
+            </div>
+            <div class="mb-3">
+                <label for="pelicula" class="form-label">Selecciona la pel·lícula</label>
+                <select class="form-select" id="pelicula" required>
+                    <option value="" disabled selected>Tria una pel·lícula...</option>
+                    <option value="halloween">Joker 2</option>
+                    <option value="scorsese">Kinds of Kidness</option>
+                    <option value="personalitzat">Beetlejuice 2</option>
+                    <option value="personalitzat">Deadpool 3</option>
+                    <option value="personalitzat">Smile 2</option>
+                    <option value="personalitzat">The Substance</option>
+                    <option value="personalitzat">Longlegs</option>
+                    <option value="personalitzat">Mascarpone</option>
+                    <option value="personalitzat">Robot Salvaje</option>
+                    <option value="personalitzat">Vaiana 2</option>
+                    <option value="personalitzat">Wicked</option>
+                    <option value="personalitzat">Red One</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="quantitat" class="form-label">Quantitat d'entrades</label>
+                <input type="number" class="form-control" id="quantitat" min="1" max="10" placeholder="Introdueix la quantitat" required>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data de la funció</label>
+                <input type="date" class="form-control" id="data" required>
+            </div>
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora de la funció</label>
+                <input type="time" class="form-control" id="hora" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Comprar Entrades</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- INICIA SESSIÓ I REGISTRE-->
+<section>
+    <h1></h1>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="row">
+            <!-- INICIA SESSIÓ -->
+            <section class="col-md-6" id="IniciaSessió">
+                <h2 class="texto1">INICIA SESSIÓ</h2>
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Correu electrònic" aria-label="Correu electrònic" aria-describedby="basic-addon1">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" placeholder="Contrasenya" aria-label="Contrasenya">
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck">Recorda'm</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Entrar</button>
+            </section>
+    
+            <!-- REGISTRE -->
+            <section class="col-md-6" id="Registra't">
+                <h2 class="texto1">REGISTRA'T</h2>
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Nom" aria-label="Nom">
+                    </div>
+                </div>
+    
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Cognoms" aria-label="Cognoms">
+                    </div>
+                </div>
+    
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <span class="input-group-text">Telefón i Codi Postal</span>
+                            <input type="text" aria-label="Telefón" class="form-control">
+                            <input type="text" aria-label="Codi Postal" class="form-control">
+                        </div>  
+                        <input type="text" class="form-control" placeholder="Correu electrònic" aria-label="Correu electrònic">
+                    </div>
+                </div>
+    
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" placeholder="Contrasenya" aria-label="Contrasenya">
+                        <div id="passwordHelpBlock" class="form-text" style="color: white;">
+                            La teva contrasenya ha de tenir entre 8 i 20 caràcters, contenir lletres i números, i no pot contenir espais, caràcters especials o emoji.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Registrar</button>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Contacte:</p>
+    <p>Marta Albar, Júlia Domene i Joan Martín</p>
+</footer>
+
+<script>
+    function toggleInfo(element) {
+        const activeElements = document.querySelectorAll('.cartel.active');
+        activeElements.forEach(el => el.classList.remove('active'));
+        element.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
